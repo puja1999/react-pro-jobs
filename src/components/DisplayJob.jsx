@@ -1,9 +1,10 @@
-import React, { useState } from 'react'
-import { Card, Badge, Button, Collapse } from 'react-bootstrap'
-import ReactMarkdown from 'react-markdown'
+import React, { useState } from 'react';
+import { Card, Badge, Button, Collapse } from 'react-bootstrap';
+import ReactMarkdown from 'react-markdown'; // for converting markdown link  to react code
 
-export default function Job({ job }) {
-  const [open, setOpen] = useState(false)
+export default function DisplayJob({ job }) {
+  // declaring state variable to open and close, means to show and hide details
+  const [open, setOpen] = useState(false) // open variable is closed first, as its by default value is given false here, it its true then, it will show the details
 
   return (
     <Card className="mb-3">
@@ -19,19 +20,23 @@ export default function Job({ job }) {
             <Badge variant="secondary" className="mr-2">{job.type}</Badge>
             <Badge variant="secondary">{job.location}</Badge>
             <div style={{ wordBreak: 'break-all' }}>
-              <ReactMarkdown source={job.how_to_apply} />
+             <ReactMarkdown source={job.how_to_apply} /> 
             </div>
           </div>
+            {/* // for image section */}
           <img className="d-none d-md-block" height="50" alt={job.company} src={job.company_logo} />
         </div>
+        {/* // for view details section */}
         <Card.Text>
           <Button
-            onClick={() => setOpen(prevOpen => !prevOpen)}
+            onClick={() => setOpen(prevOpen => !prevOpen)}  
             variant="primary"
           >
+              {/* // if open is true then Hide details, otherWise View details */}
             {open ? 'Hide Details' : 'View Details'}
           </Button>
         </Card.Text>
+          {/* // to show and hide view details section */}
         <Collapse in={open}>
           <div className="mt-4">
             <ReactMarkdown source={job.description} />
