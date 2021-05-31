@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.js": "/react-pro-jobs/static/js/main.141ded39.chunk.js",
+    "main.js.map": "/react-pro-jobs/static/js/main.141ded39.chunk.js.map",
+    "runtime-main.js": "/react-pro-jobs/static/js/runtime-main.5ab212e2.js",
+    "runtime-main.js.map": "/react-pro-jobs/static/js/runtime-main.5ab212e2.js.map",
+    "static/js/2.6e8fc231.chunk.js": "/react-pro-jobs/static/js/2.6e8fc231.chunk.js",
+    "static/js/2.6e8fc231.chunk.js.map": "/react-pro-jobs/static/js/2.6e8fc231.chunk.js.map",
+    "index.html": "/react-pro-jobs/index.html",
+    "static/js/2.6e8fc231.chunk.js.LICENSE.txt": "/react-pro-jobs/static/js/2.6e8fc231.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.5ab212e2.js",
+    "static/js/2.6e8fc231.chunk.js",
+    "static/js/main.141ded39.chunk.js"
+  ]
+}
